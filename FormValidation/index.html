@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+  <h1>Form Validation</h1>
+
+  <!-- novalidate turns off the browser's built-in checks so our JavaScript does the validating -->
+  <form id="grade-form" novalidate>
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+    </p>
+    <p>
+      <label for="score">Score (0–100):</label>
+      <input type="text" id="score">
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+    </p>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
