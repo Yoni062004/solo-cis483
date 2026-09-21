@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grade Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <h1>Student Grade Dashboard</h1>
+
+    <!-- novalidate turns off the browser's built-in checks so our JavaScript does the validating -->
+    <form id="grade-form" class="grade-form" novalidate>
+      <div class="field">
+        <label for="student-name">Student name</label>
+        <input type="text" id="student-name" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="score">Score (0–100)</label>
+        <input type="text" id="score" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Grade</button>
+    </form>
+
+    <p id="feedback" class="feedback" aria-live="polite"></p>
+
+    <section class="summary">
+      <p>Entries: <strong id="entry-count">0</strong></p>
+      <p>Average score: <strong id="average-score">—</strong></p>
+      <button type="button" id="clear-button" class="btn btn-secondary">Clear All</button>
+    </section>
+
+    <ul id="results" class="results"></ul>
+    <p id="empty-message" class="empty-message">No grades yet. Add one above.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
